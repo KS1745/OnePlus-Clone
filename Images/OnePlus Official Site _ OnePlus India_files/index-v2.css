@@ -1,0 +1,460 @@
+@font-face {
+  font-family: OnePlus Sans Display Light;
+  font-display: swap;
+  src: url(https://oasis.opstatics.com/content/dam/statics/oasis/font/aem-font/OnePlusSansDisplay-45Lt.eot);
+  src:
+    url(https://oasis.opstatics.com/content/dam/statics/oasis/font/aem-font/OnePlusSansDisplay-45Lt.eot) format('embedded-opentype'),
+  url(https://oasis.opstatics.com/content/dam/statics/oasis/font/aem-font/OnePlusSansDisplay-45Lt.woff2) format("woff2"),
+  url(https://oasis.opstatics.com/content/dam/statics/oasis/font/aem-font/OnePlusSansDisplay-45Lt.woff) format("woff"),
+  url(https://oasis.opstatics.com/content/dam/statics/oasis/font/aem-font/OnePlusSansDisplay-45Lt.ttf) format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: OnePlus Sans Regular;
+  font-display: swap;
+  src: url(https://oasis.opstatics.com/content/dam/statics/oasis/font/aem-font/OnePlusSansTextW05-Regular.eot);
+  src: url(https://oasis.opstatics.com/content/dam/statics/oasis/font/aem-font/OnePlusSansTextW05-Regular.eot) format('embedded-opentype'),
+  url(https://oasis.opstatics.com/content/dam/statics/oasis/font/aem-font/OnePlusSansTextW05-Regular.woff2) format("woff2"),
+  url(https://oasis.opstatics.com/content/dam/statics/oasis/font/aem-font/OnePlusSansTextW05-Regular.woff) format("woff"),
+  url(https://oasis.opstatics.com/content/dam/statics/oasis/font/aem-font/OnePlusSansTextW05-Regular.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal
+}
+
+@font-face {
+  font-family: OnePlus Sans Medium;
+  font-display: swap;
+  src: url(https://oasis.opstatics.com/content/dam/statics/oasis/font/aem-font/OnePlusSansTextW05-Medium.eot);
+  src: url(https://oasis.opstatics.com/content/dam/statics/oasis/font/aem-font/OnePlusSansTextW05-Medium.eot) format('embedded-opentype'),
+  url(https://oasis.opstatics.com/content/dam/statics/oasis/font/aem-font/OnePlusSansTextW05-Medium.woff2) format("woff2"),
+  url(https://oasis.opstatics.com/content/dam/statics/oasis/font/aem-font/OnePlusSansTextW05-Medium.woff) format("woff"),
+  url(https://oasis.opstatics.com/content/dam/statics/oasis/font/aem-font/OnePlusSansTextW05-Medium.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal
+}
+
+/* 等同于OnePlus Sans Regular 暂时保留兼容旧的产品页面，不建议用 */
+@font-face {
+  font-family: OnePlus Sans Display Regular;
+  font-display: swap;
+  src: url(https://oasis.opstatics.com/content/dam/statics/oasis/font/aem-font/OnePlusSansTextW05-Regular.eot);
+  src: url(https://oasis.opstatics.com/content/dam/statics/oasis/font/aem-font/OnePlusSansTextW05-Regular.eot) format('embedded-opentype'),
+  url(https://oasis.opstatics.com/content/dam/statics/oasis/font/aem-font/OnePlusSansTextW05-Regular.woff2) format("woff2"),
+  url(https://oasis.opstatics.com/content/dam/statics/oasis/font/aem-font/OnePlusSansTextW05-Regular.woff) format("woff"),
+  url(https://oasis.opstatics.com/content/dam/statics/oasis/font/aem-font/OnePlusSansTextW05-Regular.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal
+}
+
+/* 等同于OnePlus Sans Medium 暂时保留兼容旧的产品页面，不建议用 */
+@font-face {
+  font-family: OnePlus Sans Display Medium;
+  font-display: swap;
+  src: url(https://oasis.opstatics.com/content/dam/statics/oasis/font/aem-font/OnePlusSansTextW05-Medium.eot);
+  src: url(https://oasis.opstatics.com/content/dam/statics/oasis/font/aem-font/OnePlusSansTextW05-Medium.eot) format('embedded-opentype'),
+  url(https://oasis.opstatics.com/content/dam/statics/oasis/font/aem-font/OnePlusSansTextW05-Medium.woff2) format("woff2"),
+  url(https://oasis.opstatics.com/content/dam/statics/oasis/font/aem-font/OnePlusSansTextW05-Medium.woff) format("woff"),
+  url(https://oasis.opstatics.com/content/dam/statics/oasis/font/aem-font/OnePlusSansTextW05-Medium.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal
+}
+
+/* 等同于OnePlus Sans Regular 暂时保留兼容旧的页面，不建议用 */
+@font-face {
+  font-family: OnePlus Sans Text;
+  font-display: swap;
+  src: url(https://oasis.opstatics.com/content/dam/statics/oasis/font/aem-font/OnePlusSansTextW05-Regular.eot);
+  src: url(https://oasis.opstatics.com/content/dam/statics/oasis/font/aem-font/OnePlusSansTextW05-Regular.eot) format('embedded-opentype'),
+  url(https://oasis.opstatics.com/content/dam/statics/oasis/font/aem-font/OnePlusSansTextW05-Regular.woff2) format("woff2"),
+  url(https://oasis.opstatics.com/content/dam/statics/oasis/font/aem-font/OnePlusSansTextW05-Regular.woff) format("woff"),
+  url(https://oasis.opstatics.com/content/dam/statics/oasis/font/aem-font/OnePlusSansTextW05-Regular.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal
+}
+
+body,html {
+  font-family: 'OnePlus Sans Regular','Helvetica Neue',Helvetica,Arial,sans-serif,system-ui;
+  font-feature-settings: "salt"
+}
+
+.font-title {
+  /* font-family: 'OnePlus Sans Display','Helvetica Neue',Helvetica,Arial,sans-serif,system-ui; */
+}
+
+.font-medium {
+  font-family: 'OnePlus Sans Medium','Helvetica Neue',Helvetica,Arial,sans-serif,system-ui;
+}
+
+br {
+  font-size: 0
+}
+
+.font-display {
+  font-size: 100px;
+  line-height: 1.2
+}
+
+@media screen and (min-width: 769px) and (max-width:1599px) {
+  .font-display {
+    font-size:60px
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .font-display {
+    font-size:52px
+  }
+}
+
+.font-headline-4 {
+  font-size: 60px;
+  line-height: 1.2
+}
+
+@media screen and (min-width: 769px) and (max-width:1599px) {
+  .font-headline-4 {
+    font-size:36px
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .font-headline-4 {
+    font-size:32px
+  }
+}
+
+.font-headline-3 {
+  font-size: 48px;
+  line-height: 1.2
+}
+
+@media screen and (min-width: 769px) and (max-width:1599px) {
+  .font-headline-3 {
+    font-size:34px
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .font-headline-3 {
+    font-size:24px;
+    line-height: 1.4
+  }
+}
+
+.font-headline-2 {
+  font-size: 40px;
+  line-height: 1.2
+}
+
+@media screen and (min-width: 769px) and (max-width:1599px) {
+  .font-headline-2 {
+    font-size:32px
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .font-headline-2 {
+    font-size:28px
+  }
+}
+
+.font-headline-1 {
+  font-size: 30px;
+  line-height: 1.2
+}
+
+@media screen and (min-width: 769px) and (max-width:1599px) {
+  .font-headline-1 {
+    font-size:24px;
+    line-height: 1.2
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .font-headline-1 {
+    font-size:20px;
+    line-height: 1.37
+  }
+}
+
+.font-title {
+  font-size: 24px;
+  line-height: 1.33
+}
+
+@media screen and (min-width: 769px) and (max-width:1599px) {
+  .font-title {
+    font-size:20px;
+    line-height: 1.2
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .font-title {
+    font-size:16px;
+    line-height: 1.25
+  }
+}
+
+.font-subheading {
+  font-size: 20px;
+  line-height: 1.2
+}
+
+@media screen and (min-width: 769px) and (max-width:1599px) {
+  .font-subheading {
+    font-size:18px
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .font-subheading {
+    font-size:18px
+  }
+}
+
+.font-subtitle {
+  font-size: 18px;
+  line-height: 1.2
+}
+
+@media screen and (min-width: 769px) and (max-width:1599px) {
+  .font-subtitle {
+    font-size:16px
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .font-subtitle {
+    font-size:16px
+  }
+}
+
+.font-body-3 {
+  line-height: 1.7;
+  font-size: 14px
+}
+
+@media screen and (max-width: 768px) {
+  .font-body-3 {
+    font-size:12px;
+    line-height: 1.7
+  }
+}
+
+.font-body-2 {
+  line-height: 1.37;
+  font-size: 16px
+}
+
+@media screen and (min-width: 769px) and (max-width:1599px) {
+  .font-body-2 {
+    line-height:1.2
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .font-body-2 {
+    font-size:14px;
+    line-height: 1.14
+  }
+}
+
+.font-body-1 {
+  font-size: 14px;
+  line-height: 1.2
+}
+
+.font-descriptions {
+  font-size: 12px;
+  line-height: 1.33
+}
+
+@media screen and (min-width: 769px) and (max-width:1599px) {
+  .font-descriptions {
+    line-height:1.2
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .font-descriptions {
+    line-height:1.2
+  }
+}
+
+.os-font-display4 {
+  font-size: 76px
+}
+
+.os-font-display3 {
+  font-size: 58px
+}
+
+.os-font-display2 {
+  font-size: 38px
+}
+
+.os-font-display1,.os-font-headline {
+  font-size: 32px
+}
+
+.os-font-highlight {
+  font-size: 26px
+}
+
+.os-font-title,.os-font-title-extended {
+  font-size: 18px
+}
+
+.os-font-subheading {
+  font-size: 17px
+}
+
+.os-font-subtitle {
+  font-size: 12px
+}
+
+.os-font-body1,.os-font-body2,.os-font-button,.os-font-menu {
+  font-size: 13px
+}
+
+.os-font-descriptions {
+  font-size: 11px
+}
+
+
+/* =======6.0字号行高======= */
+.font-heading-3xl-display,
+.font-heading-2xl-display,
+.font-heading-xl-display,
+.font-heading-lg-display,
+.font-heading-md-display,
+.font-subheading-2xl-display,
+.font-subheading-xl-display {
+  font-family: 'OnePlus Sans Display Light', 'Helvetica Neue', Helvetica, Arial, sans-serif, system-ui;
+  font-weight: 300;
+  font-feature-settings: "salt";
+}
+
+.font-subheading-lg,
+.font-subheading-md,
+.font-body-xl,
+.font-body-lg,
+.font-body-md,
+.font-note-xs,
+.font-note-sm {
+  font-family: 'OnePlus Sans Text', 'Helvetica Neue', Helvetica, Arial, sans-serif, system-ui;
+}
+
+.font-heading-3xl-display {
+  font-size: 120px;
+  line-height: 144px;
+}
+
+.font-heading-2xl-display {
+  font-size: 80px;
+  line-height: 96px;
+}
+
+.font-heading-xl-display {
+  font-size: 72px;
+  line-height: 86px;
+}
+
+.font-heading-lg-display {
+  font-size: 60px;
+  line-height: 72px;
+}
+
+.font-heading-md-display {
+  font-size: 48px;
+  line-height: 58px;
+}
+
+.font-subheading-2xl-display {
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.font-subheading-xl-display {
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.font-subheading-lg {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.font-subheading-md {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.font-body-xl {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.font-body-lg {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.font-body-md {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.font-note-xs {
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.font-note-sm {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+@media screen and (max-width: 1023px) {
+  .font-heading-3xl-display,
+  .font-heading-2xl-display,
+  .font-heading-xl-display {
+    font-size: 44px;
+    line-height: 52px;
+  }
+  .font-heading-lg-display {
+    font-size: 40px;
+    line-height: 52px;
+  }
+  .font-heading-md-display {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .font-subheading-2xl-display {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .font-subheading-xl-display {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .font-subheading-lg {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .font-subheading-md {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .font-body-xl {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .font-body-lg {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
